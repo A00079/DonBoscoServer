@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< HEAD
     "main.css": "/static/css/main.559448ca.chunk.css",
     "main.js": "/static/js/main.bc0865f0.chunk.js",
     "main.js.map": "/static/js/main.bc0865f0.chunk.js.map",
@@ -14,13 +15,35 @@
     "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
     "static/css/main.559448ca.chunk.css.map": "/static/css/main.559448ca.chunk.css.map",
     "static/js/2.e02b8026.chunk.js.LICENSE.txt": "/static/js/2.e02b8026.chunk.js.LICENSE.txt",
+=======
+    "main.css": "/static/css/main.9d61d87e.chunk.css",
+    "main.js": "/static/js/main.cd5a100e.chunk.js",
+    "main.js.map": "/static/js/main.cd5a100e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a40f2a06.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a40f2a06.js.map",
+    "static/css/2.d34346ea.chunk.css": "/static/css/2.d34346ea.chunk.css",
+    "static/js/2.f77c4e13.chunk.js": "/static/js/2.f77c4e13.chunk.js",
+    "static/js/2.f77c4e13.chunk.js.map": "/static/js/2.f77c4e13.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.33ccf5c84f60e0b948111ade9003a15d.js": "/precache-manifest.33ccf5c84f60e0b948111ade9003a15d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d34346ea.chunk.css.map": "/static/css/2.d34346ea.chunk.css.map",
+    "static/css/main.9d61d87e.chunk.css.map": "/static/css/main.9d61d87e.chunk.css.map",
+    "static/js/2.f77c4e13.chunk.js.LICENSE.txt": "/static/js/2.f77c4e13.chunk.js.LICENSE.txt",
+>>>>>>> 04b65f7724aa4227ef781d9ff2e09f37e21cbbfd
     "static/media/App.css": "/static/media/jesus.4e5f6fe9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a40f2a06.js",
     "static/css/2.d34346ea.chunk.css",
+<<<<<<< HEAD
     "static/js/2.e02b8026.chunk.js",
     "static/css/main.559448ca.chunk.css",
     "static/js/main.bc0865f0.chunk.js"
+=======
+    "static/js/2.f77c4e13.chunk.js",
+    "static/css/main.9d61d87e.chunk.css",
+    "static/js/main.cd5a100e.chunk.js"
+>>>>>>> 04b65f7724aa4227ef781d9ff2e09f37e21cbbfd
   ]
 }
