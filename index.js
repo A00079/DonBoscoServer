@@ -7,6 +7,8 @@ const port = process.env.PORT || 5000;
 const AddAnnouncements = require('./routes/Announcements/addAnnouncements.js');
 const GetAnnouncements = require('./routes/Announcements/getAllAnnouncements.js');
 const DeleteAnnouncements = require('./routes/Announcements/deleteAnnouncement.js');
+const UpdateAnnouncements = require('./routes/Announcements/updateAnnouncements.js');
+
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -16,6 +18,7 @@ app.use(bodyParser.json())
 app.use(cors());
 // Routes
 app.use('/api/admin/announcement/create', AddAnnouncements);
+app.use('/api/admin/announcement/update', UpdateAnnouncements);
 app.use('/api/admin/announcement/read', GetAnnouncements);
 app.use('/api/admin/announcement/delete', DeleteAnnouncements);
 
