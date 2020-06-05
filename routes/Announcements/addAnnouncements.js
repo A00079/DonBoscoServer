@@ -30,7 +30,7 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                     })
                     response.json(tokenArry);
                     var message = { 
-                        to: tokenArry, 
+                        to: 'cPTXIyhFqpY:APA91bHHa8Akn40yXaVvN2D54rBTXe0XhHOUWw439LByLVfirTXaOqsR54CpUIcfBmg-5u7irtfFFJRBJyI978ZlQ1uVEc-bKvqfSKnV4nIHg3hNJymkEGSJsKqeFuZzEPEeuhGXLmhG', 
                         collapse_key: '1',
                         notification: {
                             title: 'Welcome Sir, JARVIS Here.', 
@@ -41,10 +41,10 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                     fcm.send(message, function(err, response){
                         if (err) {
                             console.log("Something has gone wrong!");
-                            res.sendStatus(404);
+                            response.sendStatus(404);
                         } else {
                             console.log("Successfully sent with response: ", response);
-                            res.sendStatus(200);
+                            response.sendStatus(200);
                         }
                     });
 
