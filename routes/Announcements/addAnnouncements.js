@@ -1,5 +1,7 @@
 const router = require('express').Router();
-
+var FCM = require('fcm-node');
+var serverKey = 'AAAAF7Tbebo:APA91bH1yUUjVHbksPOqbVBa4qaKsrSBowe1bB5X2JrNZoRk76c4ZtG6raJ1AP8CAtpKI9n-B8Roha4berIRm8vPPYGB08u_P_pBHpXEb8kmhZG1z_qJ6zWdZ5tb9bFahjUM2iVyQbAB'; 
+var fcm = new FCM(serverKey);
 // << db setup >>
 const db = require("../../db/db.config");
 const NotiDB = require("../../db/dbNotification");
@@ -27,6 +29,24 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                         tokenArry.push(item.token);
                     })
                     response.json(tokenArry);
+                    var message = { 
+                        to: tokenArry, 
+                        collapse_key: '1',
+                        notification: {
+                            title: 'Welcome Sir, JARVIS Here.', 
+                            body: 'How can i help you.' ,
+                            image: 'https://i.picsum.photos/id/1016/3844/2563.jpg'
+                        }
+                    };
+                    fcm.send(message, function(err, response){
+                        if (err) {
+                            console.log("Something has gone wrong!");
+                            res.sendStatus(404);
+                        } else {
+                            console.log("Successfully sent with response: ", response);
+                            res.sendStatus(200);
+                        }
+                    });
 
                 });
             })
