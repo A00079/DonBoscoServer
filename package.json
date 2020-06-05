@@ -1,5 +1,6 @@
 {
   "name": "server",
+  "engines" : { "node" : ">=v12.17.0" },
   "version": "1.0.0",
   "description": "Church Webapp",
   "main": "index.js",
