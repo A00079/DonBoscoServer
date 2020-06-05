@@ -33,9 +33,10 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                         registration_ids: tokenArry, 
                         collapse_key: '1',
                         notification: {
+                            priority: 'high',
                             title: 'Welcome Sir, JARVIS Here.', 
                             body: 'How can i help you.' ,
-                            image: 'https://i.picsum.photos/id/1016/3844/2563.jpg'
+                            sound: '../../sound/churchbell.mp3'
                         }
                     };
                     fcm.send(message, function(err, res){
