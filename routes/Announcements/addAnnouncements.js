@@ -30,7 +30,7 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                     })
                     response.json(tokenArry);
                     var message = { 
-                        to: tokenArry, 
+                        registration_ids: tokenArry, 
                         collapse_key: '1',
                         notification: {
                             title: 'Welcome Sir, JARVIS Here.', 
