@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "engines" : { "node" : "12.17.0" },
+  "engines" : { "node" : "12.17.0", "npm":"6.14.4" },
   "version": "1.0.0",
   "description": "Church Webapp",
   "main": "index.js",
