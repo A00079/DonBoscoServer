@@ -8,6 +8,8 @@ const AddAnnouncements = require('./routes/Announcements/addAnnouncements.js');
 const GetAnnouncements = require('./routes/Announcements/getAllAnnouncements.js');
 const DeleteAnnouncements = require('./routes/Announcements/deleteAnnouncement.js');
 const UpdateAnnouncements = require('./routes/Announcements/updateAnnouncements.js');
+const Subscribers = require('./routes/Notification/Subscribers.js');
+
 
 
 // parse application/x-www-form-urlencoded
@@ -21,6 +23,9 @@ app.use('/api/admin/announcement/create', AddAnnouncements);
 app.use('/api/admin/announcement/update', UpdateAnnouncements);
 app.use('/api/admin/announcement/read', GetAnnouncements);
 app.use('/api/admin/announcement/delete', DeleteAnnouncements);
+
+app.use('/api/users/subscribe', Subscribers);
+
 
 if (process.env.NODE_ENV === 'production') {
 
