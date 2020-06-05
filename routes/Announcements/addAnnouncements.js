@@ -30,7 +30,7 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                     })
                     response.json(tokenArry);
                     var message = { 
-                        to: 'cPTXIyhFqpY:APA91bHHa8Akn40yXaVvN2D54rBTXe0XhHOUWw439LByLVfirTXaOqsR54CpUIcfBmg-5u7irtfFFJRBJyI978ZlQ1uVEc-bKvqfSKnV4nIHg3hNJymkEGSJsKqeFuZzEPEeuhGXLmhG', 
+                        to: tokenArry, 
                         collapse_key: '1',
                         notification: {
                             title: 'Welcome Sir, JARVIS Here.', 
@@ -38,13 +38,13 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                             image: 'https://i.picsum.photos/id/1016/3844/2563.jpg'
                         }
                     };
-                    fcm.send(message, function(err, response){
+                    fcm.send(message, function(err, res){
                         if (err) {
                             console.log("Something has gone wrong!");
-                            response.sendStatus(404);
+                            // response.sendStatus(404);
                         } else {
                             console.log("Successfully sent with response: ", response);
-                            response.sendStatus(200);
+                            // response.sendStatus(200);
                         }
                     });
 
