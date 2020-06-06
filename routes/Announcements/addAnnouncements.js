@@ -35,8 +35,8 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                         collapse_key: '1',
                         notification: {
                             priority: 'high',
-                            title: 'Welcome Sir, JARVIS Here.', 
-                            body: 'How can i help you.' ,
+                            title: 'Announcement', 
+                            body: 'You have a new announcement' ,
                             sound: 'default'
                         }
                     };
