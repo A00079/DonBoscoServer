@@ -1,6 +1,5 @@
 const router = require('express').Router();
 var FCM = require('fcm-node');
-var path = require('path');
 var serverKey = 'AAAAF7Tbebo:APA91bH1yUUjVHbksPOqbVBa4qaKsrSBowe1bB5X2JrNZoRk76c4ZtG6raJ1AP8CAtpKI9n-B8Roha4berIRm8vPPYGB08u_P_pBHpXEb8kmhZG1z_qJ6zWdZ5tb9bFahjUM2iVyQbAB'; 
 var fcm = new FCM(serverKey);
 // << db setup >>
@@ -38,7 +37,7 @@ db.initialize(dbName, collectionName, function (dbCollection) { // successCallba
                             priority: 'high',
                             title: 'Welcome Sir, JARVIS Here.', 
                             body: 'How can i help you.' ,
-                            sound: path.join(__dirname, 'build','static','media', 'churchbell.mp3')
+                            sound: 'default'
                         }
                     };
                     fcm.send(message, function(err, res){
